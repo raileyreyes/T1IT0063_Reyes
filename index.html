@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Minimal Blog</title>
+    <meta name="description" content="A simple, responsive blog template" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="site-title">My Minimal Blog</h1>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Thoughts, tutorials, and stories.</h2>
+        <p>Welcome to a small collection of articles about coding, design, and productivity.</p>
+      </section>
+
+      <div class="layout">
+        <section class="posts" aria-label="Blog posts">
+          <article class="post">
+            <img src="imgs/post1.svg" alt="Post 1 image" class="post-image" />
+            <div class="post-content">
+              <h3 class="post-title">Designing Accessible Interfaces</h3>
+              <p class="post-meta">Jan 5, 2026 • UI / Accessibility</p>
+              <p>Accessibility isn't optional — it's part of good UX. In this post we cover practical patterns to make components accessible to everyone.</p>
+              <a class="read-more" href="#">Read more →</a>
+            </div>
+          </article>
+
+          <article class="post">
+            <img src="imgs/post2.svg" alt="Post 2 image" class="post-image" />
+            <div class="post-content">
+              <h3 class="post-title">Performance Tips for Frontend</h3>
+              <p class="post-meta">Dec 20, 2025 • Performance</p>
+              <p>Small changes can make big performance improvements. Learn how to profile and speed up render times with real examples.</p>
+              <a class="read-more" href="#">Read more →</a>
+            </div>
+          </article>
+
+          <article class="post">
+            <img src="imgs/post3.svg" alt="Post 3 image" class="post-image" />
+            <div class="post-content">
+              <h3 class="post-title">How I Organize My Day</h3>
+              <p class="post-meta">Nov 2, 2025 • Productivity</p>
+              <p>Tips and tools for staying focused, maintaining momentum, and finishing what's most important.</p>
+              <a class="read-more" href="#">Read more →</a>
+            </div>
+          </article>
+        </section>
+
+        <aside class="sidebar" aria-label="Sidebar">
+          <div id="about" class="widget">
+            <h4>About</h4>
+            <p>I'm a developer who loves building fast, accessible, and delightful products. I write about front-end engineering and career tips.</p>
+          </div>
+
+          <div class="widget">
+            <h4>Tags</h4>
+            <div class="tags">
+              <a href="#">Accessibility</a>
+              <a href="#">Performance</a>
+              <a href="#">Productivity</a>
+              <a href="#">Design</a>
+            </div>
+          </div>
+
+          <div id="contact" class="widget">
+            <h4>Contact</h4>
+            <p>Say hi at <a href="mailto:hi@example.com">hi@example.com</a></p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 My Minimal Blog — Built with ❤️</p>
+      </div>
+    </footer>
+  </body>
+</html>
