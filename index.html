@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header class="site-header">
       <div class="container header-inner">
         <h1 class="site-title">My Minimal Blog</h1>
         <nav class="main-nav" aria-label="Main navigation">
-          <a href="#">Home</a>
+          <a href="#" aria-current="page">Home</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container">
       <section class="hero">
         <h2>Thoughts, tutorials, and stories.</h2>
         <p>Welcome to a small collection of articles about coding, design, and productivity.</p>
@@ -59,6 +61,15 @@
         </section>
 
         <aside class="sidebar" aria-label="Sidebar">
+          <div class="widget">
+            <h4>Recent posts</h4>
+            <ul class="recent-posts">
+              <li><a href="#">Designing Accessible Interfaces</a></li>
+              <li><a href="#">Performance Tips for Frontend</a></li>
+              <li><a href="#">How I Organize My Day</a></li>
+            </ul>
+          </div>
+
           <div id="about" class="widget">
             <h4>About</h4>
             <p>I'm a developer who loves building fast, accessible, and delightful products. I write about front-end engineering and career tips.</p>
