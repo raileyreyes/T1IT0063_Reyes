@@ -1,0 +1,20 @@
+ES2025+ Features Explanation
+1. JavaScript Module System
+What the code does: The data.js file exports an object companyData containing business information and services using export. The main.js file imports this data with import { companyData } from './data.js'. The HTML includes <script type="module" src="main.js"></script> to enable module loading in the browser.
+
+Why you used that ES2025+ feature: Modules allow clean separation of code into reusable files, preventing global namespace pollution and enabling better organization. This feature ensures the business data is modular and can be easily imported where needed, making the codebase more maintainable and scalable for a real-world web application.
+
+2. Optional Chaining (?.)
+What the code does: In the renderServices function, optional chaining safely accesses nested properties like services?.rentals, rental?.image, photobooth?.features?.map(), and photobooth?.name. This prevents errors if any part of the object chain is undefined or null.
+
+Why you used that ES2025+ feature: Optional chaining provides a concise way to handle potentially missing data without verbose null checks. In a business context where data might be incomplete (like missing service details), this prevents runtime errors and allows the application to gracefully handle undefined values, improving user experience and code reliability.
+
+3. Nullish Coalescing (??)
+What the code does: The code uses ?? to provide default values when data is null or undefined, such as rental?.price ?? 'Price TBD', rental?.name ?? 'Unnamed Service', and photobooth?.features?.map(...) ?? '<li>Features not listed</li>'. This ensures fallback content is displayed instead of undefined.
+
+Why you used that ES2025+ feature: Nullish coalescing distinguishes between null/undefined and falsy values like empty strings or zero, providing more precise default value handling. This is crucial for business data where missing information (null/undefined) should show defaults, but valid falsy values (like an empty string for a description) should be preserved, ensuring accurate data presentation.
+
+4. Async/Await with Promises
+What the code does: The fetchServices function simulates data fetching by returning a Promise that resolves after a 500ms delay. The init function uses await fetchServices() to wait for the data, then calls renderServices to display it. This is wrapped in a try-catch for error handling.
+
+Why you used that ES2025+ feature: Async/await makes asynchronous code look synchronous, improving readability compared to promise chains. In a service-based website, this simulates real API calls for loading business data, allowing the UI to update dynamically without blocking the main thread, which is essential for responsive web applications handling data fetching operations.
